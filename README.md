@@ -1,7 +1,7 @@
 # projectlib
 [![CSS](https://img.shields.io/badge/language-CSS-%23006fde.svg)](https://en.wikipedia.org/wiki/CSS)
-[![License](https://img.shields.io/github/license/crtezgod/projectlib)](LICENSE)
-[License](https://img.shields.io/github/v/release/crtezgod/projectlib)<br>
+[![LICENSE](https://img.shields.io/github/license/crtezgod/projectlib)](LICENSE)
+[![RELEASE](https://img.shields.io/github/v/release/crtezgod/projectlib)](RELEASE)<br>
 *A simple, easy to use, open-source CSS library.*
 
 ### Includes
