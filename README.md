@@ -7,7 +7,7 @@
 *   **Fonts** - Roboto, Open Sans (however you can easily add any font you want, using Google Fonts)
 *   **Colors** - black, white, grey, red, green, blue
 *   **Animations** - fade-in, fade-out (you can customise these too)
-*   **Custom Attributes** - hidden, noselect, centerp, centerin
+*   **Custom Attributes** - hidden, noselect, centerp, centerin, flex-this-nav
 *   **Button Styles** - modern
 *   **Input Styles** - modern
 *   **Boxes** - Simple (dark)
