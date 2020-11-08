@@ -1,0 +1,357 @@
+/*------------------- [ projectlib - a simple, easy to use CSS library made by: crtezgod ] -------------------*/
+
+/*------------------- [ FONTS ] -------------------*/
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans); /*font-family: 'Open Sans', sans-serif;*/
+@import url(//fonts.googleapis.com/css2?family=Roboto&display=swap); /*font-family: 'Roboto', sans-serif;*/
+
+/*------------------- [ COLORS ] -------------------*/
+
+*{
+  --white: #fffafa;
+  --black: #0f0f0f;
+  --grey: #505050;
+  --red: #ff6d6d;
+  --green: #b5ffaa;
+  --blue: #007eff;
+}
+
+[white]{
+  color: var(--white);
+}
+
+[black]{
+  color: var(--black);
+}
+
+[grey]{
+  color: var(--grey);
+}
+
+[red]{
+  color: var(--red);
+}
+
+[green]{
+  color: var(--green);
+}
+
+[blue]{
+  color: var(--blue);
+}
+
+[whiteb]{
+  background-color: : var(--white);
+}
+
+[blackb]{
+  background-color: : var(--black);
+}
+
+[greyb]{
+  background-color: : var(--grey);
+}
+
+[redb]{
+  background-color: : var(--red);
+}
+
+[greenb]{
+  background-color: : var(--green);
+}
+
+[blueb]{
+  background-color: var(--blue);
+}
+
+/*------------------- [ ATTR ] -------------------*/
+
+[hidden]{
+  display: none   !important;
+}
+
+[inverted]{
+  mix-blend-mode: difference    !important;
+}
+
+[noselect]{
+  -webkit-user-select: none   !important;
+  -khtml-user-select: none   !important;
+  -moz-user-select: none   !important;
+  -o-user-select: none   !important;
+  user-select: none   !important;
+}
+
+[centerp]{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+[centerin]{
+  display: block;
+  margin: 20px auto;
+}
+
+[flex-this-nav]{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*------------------- [ ANIMATIONS ] -------------------*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in{
+  animation: fade-in 0.3s both linear;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out{
+  animation: fade-out 0.3s both;
+}
+
+/*------------------- [ BASIC-STUFF ] -------------------*/
+
+html{
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -khtml-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -khtml-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+main{
+  display: block;
+}
+
+/*------------------- [ BUTTON-STYLES ] -------------------*/
+
+.mbwhite{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--white);
+  display: block;
+  width: 150px;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.mbwhite:hover{
+  color: var(--black);
+  background-color: var(--white);    /*FILL*/
+  box-shadow: 0 0px 10px 0 var(--white) inset, 0 0px 10px 0 var(--white);   /*NEON BORDER*/
+}
+
+.mbgrey{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--grey);
+  display: block;
+  width: 150px;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.mbgrey:hover{
+  background-color: var(--grey);    /*FILL*/
+  box-shadow: 0 0px 10px 0 var(--grey) inset, 0 0px 10px 0 var(--grey);   /*NEON BORDER*/
+}
+
+.mbred{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--red);
+  display: block;
+  width: 150px;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.mbred:hover{
+  background-color: var(--red);    /*FILL*/
+  box-shadow: 0 0px 10px 0 var(--red) inset, 0 0px 10px 0 var(--red);   /*NEON BORDER*/
+}
+
+.mbgreen{
+  height: 2rem;
+  background: none;
+  color: var(--black);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--green);
+  display: block;
+  width: 150px;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.mbgreen:hover{
+  background-color: var(--green);    /*FILL*/
+  box-shadow: 0 0px 10px 0 var(--green) inset, 0 0px 10px 0 var(--green);   /*NEON BORDER*/
+}
+
+.mbblue{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--blue);
+  display: block;
+  width: 150px;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.mbblue:hover{
+  background-color: var(--blue);    /*FILL*/
+  box-shadow: 0 0px 10px 0 var(--blue) inset, 0 0px 10px 0 var(--blue);   /*NEON BORDER*/
+}
+
+/*------------------- [ INPUT-STYLES ] -------------------*/
+
+.miwhite{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--white);
+  display: block;
+  width: 170px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.miwhite:focus{
+  width: 200px;
+  border-radius: 24px;
+  box-shadow: 0 0px 10px 0 var(--white) inset, 0 0px 10px 0 var(--white);   /*NEON BORDER*/
+}
+
+.migrey{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--grey);
+  display: block;
+  width: 170px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.migrey:focus{
+  border: 2px solid #565656;
+  width: 200px;
+  border-radius: 24px;
+  box-shadow: 0 0px 10px 0 #565656 inset, 0 0px 10px 0 #565656;   /*NEON BORDER*/
+}
+
+.mired{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--red);
+  display: block;
+  width: 170px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.mired:focus{
+  width: 200px;
+  border-radius: 24px;
+  box-shadow: 0 0px 10px 0 var(--red) inset, 0 0px 10px 0 var(--red);   /*NEON BORDER*/
+}
+
+.migreen{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--green);
+  display: block;
+  width: 170px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.migreen:focus{
+  width: 200px;
+  border-radius: 24px;
+  box-shadow: 0 0px 10px 0 var(--green) inset, 0 0px 10px 0 var(--green);   /*NEON BORDER*/
+}
+
+.miblue{
+  height: 2rem;
+  background: none;
+  color: var(--white);
+  outline: none;
+  text-align: center;
+  border: 2px solid var(--blue);
+  display: block;
+  width: 170px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.miblue:focus{
+  width: 200px;
+  border-radius: 24px;
+  box-shadow: 0 0px 10px 0 var(--blue) inset, 0 0px 10px 0 var(--blue);   /*NEON BORDER*/
+}
+
+/*------------------- [ BOXES ] -------------------*/
+
+.simpledk{ /*simple dark box*/
+  width: 425px;
+  height: 225px;
+  padding: 40px;
+  position: absolute;
+  background: var(--black);
+  text-align: center;
+  box-shadow: 0 0px 0px 0 var(--black) inset, 10px 10px 70px 20px var(--black);
+}
